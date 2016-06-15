@@ -1,0 +1,69 @@
+﻿
+
+/*-------------------------------------------特色美食CSS样式-----------------------------*/
+
+
+
+#sp-content{
+	width: 960px;
+	height: 2000px;
+	margin: 0 auto;
+	background: url(../images/story-bg-01.png) repeat-x center top #fff;
+}
+#sp-content #left-list{
+	float: left;
+	display: inline;
+	width: 608px;
+	border-style: solid;
+	border-color: #a5a5a5;
+	border-width: 1px 1px 1px 1px;
+	margin-left: 35px;
+}
+#sp-content #left-list li{
+	width: 608px;
+	height: 127px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #a5a5a5;
+}
+#sp-content #left-list #s-img{
+	width: 130px;
+	height: 127px;
+	margin-left: 10px;
+	float: left;
+	display: inline;
+	text-align:center;
+	background: url(../images/imgbg_03.png) no-repeat;
+}
+#sp-content #left-list #s-img img{
+	width: 100px;
+	padding-top: 20px;
+	box-shadow: none;
+}
+#sp-content #left-list #s-tipe{
+	width: 468px;
+	height: 127px;
+	float: right;
+	display: inline;
+}
+#sp-content #left-list #s-tipe p{
+	color: #333333;
+	font-size: 20px;
+	float: left;
+	display: inline;
+	margin: 10px 0 0 20px;
+}
+#sp-content #left-list #s-tipe p a{
+	color: #727272;
+	font-size: 16px;
+	font-weight: normal;
+}
+#sp-content #left-list #s-tipe b{
+	color: #464646;
+	float: right;
+	display: inline;
+	width: 426px;
+	font-weight: normal;
+	text-indent: 2em;
+	margin: 7px 20px 0 0;
+}

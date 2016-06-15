@@ -1,0 +1,38 @@
+﻿
+
+/*城市夜色 CSS*/
+
+
+#c-title{
+	width: 908px;
+	line-height: 60px;
+	margin: 0 auto;
+	color: #353535;
+	padding-left: 52px;
+	padding-top: 22px;
+	font-size: 24px;
+	background: white;
+}
+#c-content{
+	margin: 0 auto;
+	width: 960px;
+	display: table;
+	background: #fff;
+}
+#c-content ul{
+	margin-left: 10px;
+	display: table;
+	padding-bottom: 20px;
+}
+#c-content li{
+	float: left;
+	display: inline;
+	margin-right: 20px;
+	margin-top: 20px;
+	width: 220px;
+	height: 136px;
+	overflow: hidden;
+}
+#c-content li img{
+	width: 220px;
+}

@@ -1,0 +1,620 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  <!--第一行说明了他的文字编码-->
+<meta http-equiv="Content-Language" content="zh-CN" />                 <!--第二行说明了他采用的语言-->
+<meta name="Chen xinyuan" content="Csdn" />                            <!--第三行说明了他的作者-->
+<meta name="Copyright" content="Csdn" />                               <!--第四行说明了他的版权-->
+<meta name="description" content="" />                                 <!--第五行是对网站的简单描述-->
+<meta name="keywords" content="" />                                    <!--第六行是说明了本网站的关键字 后便两行主要是被百度这些搜索网站检索的时候用的非常重要-->
+<title>城市景色__城市特色__辽宁景观</title>
+<link rel="Shortcut Icon" href="favicon.ico" />
+
+<link rel="Shortcut Icon" href="images/favicon.png" >
+
+<link rel="stylesheet" href="css/index.css" />
+
+<link rel="stylesheet" href="css/pictur.css" />
+
+<link rel="stylesheet" href="css/c-yese.css" />
+
+<link rel="stylesheet" href="css/colorbox.css" />
+
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/stoptop.js"></script>
+
+<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
+
+<script type="text/javascript" src="js/page-img.js"></script>
+<script>
+/*======= colorbox =======*/ 
+$(document).ready(function(){
+	//.group1,2,3,4,5  五种样式
+	$(".group1").colorbox({rel:'group1'});
+	$(".group2").colorbox({rel:'group2', transition:"fade"});
+	$(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+	$(".group4").colorbox({rel:'group4', slideshow:true});
+	$(".ajax").colorbox();
+	$(".youtube").colorbox({iframe:true, innerWidth:425, innerHeight:344});
+	$(".vimeo").colorbox({iframe:true, innerWidth:500, innerHeight:409});
+	$(".iframe").colorbox({iframe:true, width:"80%", height:"80%"});
+	$(".inline").colorbox({inline:true, width:"50%"});
+	$(".callbacks").colorbox({
+		onOpen:function(){ alert('onOpen: colorbox is about to open'); },
+		onLoad:function(){ alert('onLoad: colorbox has started to load the targeted content'); },
+		onComplete:function(){ alert('onComplete: colorbox has displayed the loaded content'); },
+		onCleanup:function(){ alert('onCleanup: colorbox has begun the close process'); },
+		onClosed:function(){ alert('onClosed: colorbox has completely closed'); }
+	});
+
+	$('.non-retina').colorbox({rel:'group5', transition:'none'})
+	$('.retina').colorbox({rel:'group5', transition:'none', retinaImage:true, retinaUrl:true});
+	
+	$("#click").click(function(){ 
+		$('#click').css({"background-color":"#f00", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+		return false;
+	});
+});
+</script>
+
+</head>
+<body>
+<div id="header">
+	<div id="headerbanner">
+		<div id="bannertitle">
+			<div id="bannername">
+				<img id="logo" src="images/logo.png" alt="" />
+			</div>
+		</div>
+	</div>
+	<div id="headernav">
+		<div id="navcenter">
+			<ul id="menu">
+				<li class="nav-menu">
+					<div class="nav-bg" style="opacity:0"></div>
+					<a href="index.html" class="nav-sub">
+						<span class="sub-title">首页</span>
+						<span class="sub-about">Home</span>
+					</a>
+				</li>
+				<li class="nav-menu">
+					<div class="nav-bg" style="opacity:0"></div>
+					<a href="seaside.html" class="nav-sub">
+						<span class="sub-title">海边风光</span>
+						<span class="sub-about">Seaside scenery</span>
+					</a>
+					<ul id="sub-list" style="display:none;">
+						<li class="sub-list">
+							<a href="s-xinghai.html">大连星海公园</a>
+						</li>
+						<li class="sub-list">
+							<a href="s-jinshitan.html">大连金石滩公园</a>
+						</li>
+						<li class="sub-list">
+							<a href="s-honghaitan.html">盘锦红海滩</a>
+						</li>
+						<li class="sub-list">
+							<a href="s-benxishuidong.html">本溪水洞</a>
+						</li>
+						<li class="sub-list">
+							<a href="seaside.html">更多...</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-menu">
+					<div class="nav-bg" style="opacity:0"></div>
+					<a href="mountains.html" class="nav-sub">
+						<span class="sub-title">山川美景</span>
+						<span class="sub-about">Mountains scenery</span>
+					</a>
+					<ul id="sub-list" style="display:none;">
+						<li class="sub-list">
+							<a href="m-qipanshan.html">沈阳棋盘山</a>
+						</li>
+						<li class="sub-list">
+							<a href="m-bijiashan.html">锦州笔架山</a>
+						</li>
+						<li class="sub-list">
+							<a href="m-putuoshan.html">锦州北普陀山</a>
+						</li>
+						<li class="sub-list">
+							<a href="m-haitangshan.html">阜新海棠山</a>
+						</li>
+						<li class="sub-list">
+							<a href="mountains.html">更多...</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-menu">
+					<div class="nav-bg" style="opacity:0"></div>
+					<a href="city.html" class="nav-sub">
+						<span class="sub-title">城市特色</span>
+						<span class="sub-about">City characteristics</span>
+					</a>
+					<ul id="sub-list" style="display:none;">
+						<li class="sub-list">
+							<a href="c-sygugong.html">沈阳故宫</a>
+						</li>
+						<li class="sub-list">
+							<a href="c-xcgucheng.html">兴城古城</a>
+						</li>
+						<li class="sub-list">
+							<a href="c-yese.html">城市景色</a>
+						</li>
+						<li class="sub-list">
+							<a href="city.html">更多...</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-menu">
+					<div class="nav-bg" style="opacity:0"></div>
+					<a href="specialties.html" class="nav-sub">
+						<span class="sub-title">特色美食</span>
+						<span class="sub-about">Specialties</span>
+					</a>
+				</li>
+				<li class="nav-menu">
+					<div class="nav-bg" style="opacity:0"></div>
+					<a href="story.html" class="nav-sub">
+						<span class="sub-title">辽海传说</span>
+						<span class="sub-about">Liaohai story</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="picturbanner">
+	<div id="picturbanner-bg"></div>
+	<div id="picturbanner-info"></div>
+	<ol>
+		<li><a href="" ><img src="photos/city-banner-01.jpg" title="发现王国" alt="发现王国"></a></li>
+		<li><a href="" ><img src="photos/city-banner-02.jpg" title="星海广场" alt="星海广场"></a></li>
+		<li><a href="" ><img src="photos/city-banner-03.jpg" title="沈阳风光" alt="沈阳风光"></a></li>
+		<li><a href="" ><img src="photos/city-banner-04.jpg" title="沈阳风光" alt="沈阳风光"></a></li>
+		<li><a href="" ><img src="photos/city-banner-05.jpg" title="大连风光" alt="大连风光"></a></li>
+	</ol>
+	<ul></ul>
+</div>
+<div id="all-title">
+	<div id="float" style="top:-2px;z-index:5;">
+		<div id="all-box">
+			<p id="all-name">城市特色<font style="font-size:16px;">-城市景色</font></p>
+			<div id="all-bottom"></div>
+			<div id="all-right"></div>
+			<div id="all-left"></div>
+		</div>
+	</div>
+</div>
+<div id="c-content">
+	<ul>
+		<li>
+			<a class="group1" href="photos/yese/dr1.jpg" title=""><img id="w-img" src="photos/yese/dr1.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr2.jpg" title=""><img id="w-img" src="photos/yese/dr2.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr3.jpg" title=""><img id="w-img" src="photos/yese/dr3.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr4.jpg" title=""><img id="w-img" src="photos/yese/dr4.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr5.jpg" title=""><img id="w-img" src="photos/yese/dr5.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr6.jpg" title=""><img id="w-img" src="photos/yese/dr6.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr7.jpg" title=""><img id="w-img" src="photos/yese/dr7.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr8.jpg" title=""><img id="w-img" src="photos/yese/dr8.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr9.jpg" title=""><img id="w-img" src="photos/yese/dr9.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr10.jpg" title=""><img id="w-img" src="photos/yese/dr10.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr11.jpg" title=""><img id="w-img" src="photos/yese/dr11.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr12.jpg" title=""><img id="w-img" src="photos/yese/dr12.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr13.jpg" title=""><img id="w-img" src="photos/yese/dr13.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr14.jpg" title=""><img id="w-img" src="photos/yese/dr14.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr15.jpg" title=""><img id="w-img" src="photos/yese/dr15.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr16.jpg" title=""><img id="w-img" src="photos/yese/dr16.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr17.jpg" title=""><img id="w-img" src="photos/yese/dr17.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr18.jpg" title=""><img id="w-img" src="photos/yese/dr18.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr19.jpg" title=""><img id="w-img" src="photos/yese/dr19.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr20.jpg" title=""><img id="w-img" src="photos/yese/dr20.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr21.jpg" title=""><img id="w-img" src="photos/yese/dr21.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr22.jpg" title=""><img id="w-img" src="photos/yese/dr22.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr23.jpg" title=""><img id="w-img" src="photos/yese/dr23.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr24.jpg" title=""><img id="w-img" src="photos/yese/dr24.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr25.jpg" title=""><img id="w-img" src="photos/yese/dr25.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr26.jpg" title=""><img id="w-img" src="photos/yese/dr26.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr27.jpg" title=""><img id="w-img" src="photos/yese/dr27.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr28.jpg" title=""><img id="w-img" src="photos/yese/dr28.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr29.jpg" title=""><img id="w-img" src="photos/yese/dr29.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr30.jpg" title=""><img id="w-img" src="photos/yese/dr30.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr31.jpg" title=""><img id="w-img" src="photos/yese/dr31.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr32.jpg" title=""><img id="w-img" src="photos/yese/dr32.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr33.jpg" title=""><img id="w-img" src="photos/yese/dr33.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr34.jpg" title=""><img id="w-img" src="photos/yese/dr34.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr35.jpg" title=""><img id="w-img" src="photos/yese/dr35.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr36.jpg" title=""><img id="w-img" src="photos/yese/dr36.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr37.jpg" title=""><img id="w-img" src="photos/yese/dr37.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr38.jpg" title=""><img id="w-img" src="photos/yese/dr38.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr39.jpg" title=""><img id="w-img" src="photos/yese/dr39.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr40.jpg" title=""><img id="w-img" src="photos/yese/dr40.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr41.jpg" title=""><img id="w-img" src="photos/yese/dr41.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr42.jpg" title=""><img id="w-img" src="photos/yese/dr42.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr43.jpg" title=""><img id="w-img" src="photos/yese/dr43.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr44.jpg" title=""><img id="w-img" src="photos/yese/dr44.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr45.jpg" title=""><img id="w-img" src="photos/yese/dr45.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr46.jpg" title=""><img id="w-img" src="photos/yese/dr46.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr47.jpg" title=""><img id="w-img" src="photos/yese/dr47.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr48.jpg" title=""><img id="w-img" src="photos/yese/dr48.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr49.jpg" title=""><img id="w-img" src="photos/yese/dr49.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr50.jpg" title=""><img id="w-img" src="photos/yese/dr50.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr51.jpg" title=""><img id="w-img" src="photos/yese/dr51.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr52.jpg" title=""><img id="w-img" src="photos/yese/dr52.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr53.jpg" title=""><img id="w-img" src="photos/yese/dr53.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr54.jpg" title=""><img id="w-img" src="photos/yese/dr54.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr55.jpg" title=""><img id="w-img" src="photos/yese/dr55.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr56.jpg" title=""><img id="w-img" src="photos/yese/dr56.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr57.jpg" title=""><img id="w-img" src="photos/yese/dr57.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr58.jpg" title=""><img id="w-img" src="photos/yese/dr58.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr59.jpg" title=""><img id="w-img" src="photos/yese/dr59.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr60.jpg" title=""><img id="w-img" src="photos/yese/dr60.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr61.jpg" title=""><img id="w-img" src="photos/yese/dr61.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr62.jpg" title=""><img id="w-img" src="photos/yese/dr62.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr63.jpg" title=""><img id="w-img" src="photos/yese/dr63.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr64.jpg" title=""><img id="w-img" src="photos/yese/dr64.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr65.jpg" title=""><img id="w-img" src="photos/yese/dr65.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr66.jpg" title=""><img id="w-img" src="photos/yese/dr66.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr67.jpg" title=""><img id="w-img" src="photos/yese/dr67.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr68.jpg" title=""><img id="w-img" src="photos/yese/dr68.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr69.jpg" title=""><img id="w-img" src="photos/yese/dr69.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr70.jpg" title=""><img id="w-img" src="photos/yese/dr70.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr71.jpg" title=""><img id="w-img" src="photos/yese/dr71.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr72.jpg" title=""><img id="w-img" src="photos/yese/dr72.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr73.jpg" title=""><img id="w-img" src="photos/yese/dr73.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr74.jpg" title=""><img id="w-img" src="photos/yese/dr74.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr75.jpg" title=""><img id="w-img" src="photos/yese/dr75.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr76.jpg" title=""><img id="w-img" src="photos/yese/dr76.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr77.jpg" title=""><img id="w-img" src="photos/yese/dr77.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr78.jpg" title=""><img id="w-img" src="photos/yese/dr78.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr79.jpg" title=""><img id="w-img" src="photos/yese/dr79.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr80.jpg" title=""><img id="w-img" src="photos/yese/dr80.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr81.jpg" title=""><img id="w-img" src="photos/yese/dr81.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr82.jpg" title=""><img id="w-img" src="photos/yese/dr82.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr83.jpg" title=""><img id="w-img" src="photos/yese/dr83.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr84.jpg" title=""><img id="w-img" src="photos/yese/dr84.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr85.jpg" title=""><img id="w-img" src="photos/yese/dr85.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr86.jpg" title=""><img id="w-img" src="photos/yese/dr86.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr87.jpg" title=""><img id="w-img" src="photos/yese/dr87.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr88.jpg" title=""><img id="w-img" src="photos/yese/dr88.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr89.jpg" title=""><img id="w-img" src="photos/yese/dr89.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr90.jpg" title=""><img id="w-img" src="photos/yese/dr90.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr91.jpg" title=""><img id="w-img" src="photos/yese/dr91.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr92.jpg" title=""><img id="w-img" src="photos/yese/dr92.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr93.jpg" title=""><img id="w-img" src="photos/yese/dr93.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr94.jpg" title=""><img id="w-img" src="photos/yese/dr94.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr95.jpg" title=""><img id="w-img" src="photos/yese/dr95.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr96.jpg" title=""><img id="w-img" src="photos/yese/dr96.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr97.jpg" title=""><img id="w-img" src="photos/yese/dr97.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr98.jpg" title=""><img id="w-img" src="photos/yese/dr98.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr99.jpg" title=""><img id="w-img" src="photos/yese/dr99.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr100.jpg" title=""><img id="w-img" src="photos/yese/dr100.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr101.jpg" title=""><img id="w-img" src="photos/yese/dr101.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr102.jpg" title=""><img id="w-img" src="photos/yese/dr102.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr103.jpg" title=""><img id="w-img" src="photos/yese/dr103.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr104.jpg" title=""><img id="w-img" src="photos/yese/dr104.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr105.jpg" title=""><img id="w-img" src="photos/yese/dr105.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr106.jpg" title=""><img id="w-img" src="photos/yese/dr106.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr107.jpg" title=""><img id="w-img" src="photos/yese/dr107.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr108.jpg" title=""><img id="w-img" src="photos/yese/dr108.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr109.jpg" title=""><img id="w-img" src="photos/yese/dr109.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr110.jpg" title=""><img id="w-img" src="photos/yese/dr110.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr111.jpg" title=""><img id="w-img" src="photos/yese/dr111.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr112.jpg" title=""><img id="w-img" src="photos/yese/dr112.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr113.jpg" title=""><img id="w-img" src="photos/yese/dr113.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr114.jpg" title=""><img id="w-img" src="photos/yese/dr114.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr115.jpg" title=""><img id="w-img" src="photos/yese/dr115.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr116.jpg" title=""><img id="w-img" src="photos/yese/dr116.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr117.jpg" title=""><img id="w-img" src="photos/yese/dr117.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr118.jpg" title=""><img id="w-img" src="photos/yese/dr118.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr119.jpg" title=""><img id="w-img" src="photos/yese/dr119.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr120.jpg" title=""><img id="w-img" src="photos/yese/dr120.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr121.jpg" title=""><img id="w-img" src="photos/yese/dr121.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr122.jpg" title=""><img id="w-img" src="photos/yese/dr122.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr123.jpg" title=""><img id="w-img" src="photos/yese/dr123.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr124.jpg" title=""><img id="w-img" src="photos/yese/dr124.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr125.jpg" title=""><img id="w-img" src="photos/yese/dr125.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr126.jpg" title=""><img id="w-img" src="photos/yese/dr126.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr127.jpg" title=""><img id="w-img" src="photos/yese/dr127.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr128.jpg" title=""><img id="w-img" src="photos/yese/dr128.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr129.jpg" title=""><img id="w-img" src="photos/yese/dr129.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr130.jpg" title=""><img id="w-img" src="photos/yese/dr130.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr131.jpg" title=""><img id="w-img" src="photos/yese/dr131.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr132.jpg" title=""><img id="w-img" src="photos/yese/dr132.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr133.jpg" title=""><img id="w-img" src="photos/yese/dr133.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr134.jpg" title=""><img id="w-img" src="photos/yese/dr134.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr135.jpg" title=""><img id="w-img" src="photos/yese/dr135.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr136.jpg" title=""><img id="w-img" src="photos/yese/dr136.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr137.jpg" title=""><img id="w-img" src="photos/yese/dr137.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr138.jpg" title=""><img id="w-img" src="photos/yese/dr138.jpg" alt="" /></a>
+		</li>
+		<li>
+			<a class="group1" href="photos/yese/dr139.jpg" title=""><img id="w-img" src="photos/yese/dr139.jpg" alt="" /></a>
+		</li>
+		<li style="margin-right:0;">
+			<a class="group1" href="photos/yese/dr140.jpg" title=""><img id="w-img" src="photos/yese/dr140.jpg" alt="" /></a>
+		</li>
+	</ul>
+	<input type='hidden' id='current_page' />
+	<input type='hidden' id='show_per_page' />
+	<div style="margin-left:270px;" id="page_navigation"></div>
+</div>
+<div id="footer"></div>
+</body>
+</html>

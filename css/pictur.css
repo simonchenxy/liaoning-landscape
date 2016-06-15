@@ -1,0 +1,14 @@
+﻿
+
+/*图片轮播样式*/
+
+
+#picturbanner{margin:0 auto 0;width: 960px;height: 288px;overflow: hidden;position: relative;}
+#picturbanner-bg{width: 960px;height: 40px;background: #000;opacity: 0.5;bottom: 0;z-index: 1;position: absolute;}
+#picturbanner-info{position: absolute; z-index: 2; width: 300px; height: 20px; left: 25px; bottom: 10px;font-size:16px;}
+#picturbanner ol{position: absolute;top: 0;left: 0;}
+#picturbanner ol li{float: left;width: 960px;height: 288px;}
+#picturbanner ol li a{width: 960px;height: 288px;display: block;}
+#picturbanner ul{width: 115px;height: 20px;position: absolute;right: 10px;bottom: 10px;z-index: 2;}
+#picturbanner ul li{cursor: pointer;float: left;display: inline;background: #fff;width: 20px;height: 20px;color: #FF6600;text-align: center;line-height: 20px;margin-right: 3px;opacity: 0.7;}
+#picturbanner ul li.on{background: #FF6600;color: #fff;}

@@ -1,0 +1,150 @@
+﻿
+
+/*首页CSS样式*/
+
+#picshow{
+	width: 970px;
+	height: 300px;
+	overflow: hidden;
+	margin: 0 auto 0;
+	background: #fff;
+}
+#picshow .picshowul{
+	position: relative;
+}
+#picshow .picshowul li{
+	display: block;
+    height: 300px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 235px;
+    float: left;
+    margin-right: 10px;
+}
+#picshow .picshowul .picshowli-1{
+	background: url("../photos/kwicks-slider1.jpg") no-repeat;
+}
+#picshow .picshowul .picshowli-2{
+	background: url("../photos/kwicks-slider2.jpg") no-repeat;
+}
+#picshow .picshowul .picshowli-3{
+	background: url("../photos/kwicks-slider3.jpg") no-repeat;
+}
+#picshow .picshowul .picshowli-4{
+	background: url("../photos/kwicks-slider4.jpg") no-repeat;
+}
+#picshow .picshowul li .picshowlia{
+	width: 630px;
+	height: 300px;
+	position: absolute;
+	margin: 0;
+	z-index: 1;
+}
+#picshow .picshowul li .picshowoverlay{
+	width: 630px;
+	height: 300px;
+	position: absolute;
+	margin: 0;
+}
+#picshow .picshowul li .picshowoverlay .overlaytitle{
+	width: 310px;
+	height: 40px;
+	text-transform: uppercase;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-ms-transform:rotate(-90deg);
+	position: absolute;
+	left: -136px;
+	top: 130px;
+}
+#picshow .picshowul li .picshowoverlay .overlaytitle span{
+	opacity: 0.4;
+	filter:alpha(opacity=40);
+	background: #fff;
+	width: 310px;
+	height: 40px;
+	position: absolute;
+	z-index: -1;
+}
+#picshow .picshowul li .picshowoverlay .overlaytitle p{
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+}
+#picshow .picshowul li .picshowoverlay .overlaylist{
+	width: 630px;
+	height: 100px;
+	background: #000000;
+	position: absolute;
+	top: 300px;
+	opacity: 0.7;
+	filter:alpha(opacity=70);
+}
+#picshow .picshowul li .picshowoverlay .overlaylist h2{
+	float: left;
+    font-size: 16px;
+    margin: 14px 0 0 50px;
+    width: 500px;
+}
+#picshow .picshowul li .picshowoverlay .overlaylist strong{
+	float: left;
+    font-weight: normal;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 500px;
+    text-indent: 2em;
+}
+#hotview{
+	width: 970px;
+	display:table;
+	margin: 0 auto;
+	background: #fff;
+	padding-bottom: 70px;
+}
+#hotview .hotviewul .hotviewli{
+	float: left;
+	width: 310px;
+	height: 360px;
+}
+#hotview .hotviewul .hotviewli .imgbg{
+	width: 310px;
+	height: 206px;
+	float: left;
+	display: inline;
+	background: url(../images/imgbg_01.png) no-repeat;
+}
+#hotview .hotviewul .hotviewli .imgbg #w-img{
+	width: 250px;
+	height: 137px;
+}
+#hotview .hotviewul .hotviewli h1,#hotview .hotviewul .hotviewli h2{
+	color: #000;
+}
+#hotview .hotviewul .hotviewli h1{
+	font-size: 16px;
+	float: left;
+	display: inline;
+	margin: 10px 0 0 50px;
+}
+#hotview .hotviewul .hotviewli h2{
+	float: left;
+	display: inline;
+	text-indent: 2em;
+	width: 200px;
+	margin: 10px 0 0 54px;
+}
+#picroll{
+	background: none repeat scroll 0 0 #F1F1F1;
+    height: 225px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 970px;
+}
+#picroll .picrolltd{
+	padding-right: 5px;
+}
+.img-1,.img-2,.img-3,.img-4,.img-5,.img-6{
+	
+}
