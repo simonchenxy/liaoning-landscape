@@ -1,6 +1,41 @@
 ﻿
 
 $(function(){//开始
+
+
+	$("#header #navcenter").css({"position":"relative"});
+	$("#header #navcenter").append("<div class='bar'></div>");
+	$("#header #navcenter .bar").css({"height":"3px","width":"100px","position":"absolute","top":"0","left":"0","background-color":"#00ff00"});
+	var index=window.location.href.split("/").length-1;
+	var href=window.location.href.split("/")[index].substr(0,4);
+	$("#headernav #navcenter #menu .nav-menu a[href^='"+href+"']").addClass("on");
+	var liWidth=$("#headernav #navcenter #menu a.on").outerWidth();
+	var liLeft=$("#headernav #navcenter #menu a.on").position().left;
+	$(".bar").css({"width":liWidth,"left":liLeft});
+	$("#headernav #navcenter #menu .nav-menu a").hover(function(){
+		var liWidth=$(this).outerWidth();
+		var liLeft=$(this).position().left;
+		$(".bar").stop().animate({"width":liWidth,"left":liLeft},300);
+	},function(){
+		$(".bar").stop().animate({"width":liWidth,"left":liLeft},300);
+	})
+
+
+	var ht=$("#headernav").offset().top;
+	$(window).scroll(function(){
+		var t=$(this).scrollTop();
+		if(t>ht){
+			$("#headernav").addClass("on");
+		}else{
+			$("#headernav").removeClass("on");
+		}
+	})
+
+
+
+
+
+
 	//返回顶部
 	var backtoTopText = "返回顶部";
 	$("body").append("<div class='backToTop'></div>");

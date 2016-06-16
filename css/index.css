@@ -58,7 +58,7 @@ body{
     z-index: 10;
 }
 #headernav #navcenter{
-	width: 970px;
+	// width: 970px;
 	height: 80px;
 	margin: 0 auto;
 }
