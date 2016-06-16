@@ -3,8 +3,8 @@
 $(function(){//开始
 
 
-	$("#header #navcenter").css({"position":"relative"});
-	$("#header #navcenter").append("<div class='bar'></div>");
+	$("#header #navcenter ul").css({"position":"relative"});
+	$("#header #navcenter ul").append("<li class='bar'></li>");
 	$("#header #navcenter .bar").css({"height":"3px","width":"100px","position":"absolute","top":"0","left":"0","background-color":"#00ff00"});
 	var index=window.location.href.split("/").length-1;
 	var href=window.location.href.split("/")[index].substr(0,4);
