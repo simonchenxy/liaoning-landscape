@@ -1,4 +1,4 @@
-# 辽宁景观  liaoning-landscape
+# 辽宁景观  LiaoNing-Landscape
 
 `index.html`
 ###就是个练习
