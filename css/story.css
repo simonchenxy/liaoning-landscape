@@ -8,26 +8,21 @@
 	height: 1230px;
 	margin: 0 auto;
 	background: url(../images/story-bg-01.png) repeat-x center top #fff;
+	overflow: hidden;
 }
 #scontent #left-list{
-	float: left;
-	display: inline;
 	width: 212px;
 	margin-top: 20px;
 	margin-left: 20px;
+	float: left;
 }
 #scontent #left-list #list-img{
 	width: 212px;
 	height: 120px;
-	float: left;
+	
 	display: inline;
 }
 #scontent #left-list .list-title{
-	width: 212px;
-	height: auto;
-	float: left;
-	display: inline;
-	color: #000;
 	text-align: center;
 	
 }
@@ -59,32 +54,38 @@
 
 }
 #scontent #right-list{
-	width: 700px;
-	height: auto;
-	float: right;
-	display: inline;
 	color: #000;
+	margin-left: 232px;
+    padding: 20px 50px;
+
 }
-#scontent #right-list li{
-	margin-top: 45px;
-	margin-left: 30px;
-	display: none;
-	position: absolute;
-	width: 620px;
+#scontent #right-list h2{
+	text-align: center;
+	font-size: 24px;
 }
 #scontent #right-list p{
-	font-size: 20px;
-	margin-bottom: 16px;
-	text-align:center;
-	width: 600px;
-	float: left;
-	display: inline;
-}
-#scontent #right-list span{
-	float: left;
-	display: inline;
 	font-size: 14px;
-	text-indent: 2em;
-	width: 600px;
-	line-height: 28px;
+	line-height: 36px;
+	margin-top: 24px;
 }
+#scontent #right-list p span{
+	display: block;
+	text-indent: 2em;
+
+}
+// #scontent #right-list p{
+// 	font-size: 20px;
+// 	margin-bottom: 16px;
+// 	text-align:center;
+// 	width: 600px;
+// 	
+// 	display: inline;
+// }
+// #scontent #right-list span{
+// 	
+// 	display: inline;
+// 	font-size: 14px;
+// 	text-indent: 2em;
+// 	width: 600px;
+// 	line-height: 28px;
+// }
