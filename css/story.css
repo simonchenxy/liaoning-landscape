@@ -7,7 +7,6 @@
 	width: 960px;
 	height: 1230px;
 	margin: 0 auto;
-	background: url(../images/story-bg-01.png) repeat-x center top #fff;
 	overflow: hidden;
 }
 #scontent #left-list{
@@ -42,7 +41,6 @@
 	color: #fff;
 }
 #scontent #left-list .list-title .title-li ul{
-	background: url(../images/story-bg-01.png) repeat-x center top ;
 	display:none;
 	border-left: 1px dotted #000;
 	border-right: 1px dotted #000;

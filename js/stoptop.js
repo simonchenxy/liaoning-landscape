@@ -50,9 +50,10 @@ $(function(){
 
 	}
 
-	var ht=$("#headernav").offset().top;
+	
 	var title=$("#float").offset().top;
 	$(window).scroll(function() {
+		var ht=$("#headernav").outerHeight();
 		var top=$(window).scrollTop();
 		if(top>title-ht){
 			$("#float").addClass("on").css({"top":+ht});
