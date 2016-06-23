@@ -8,6 +8,7 @@
 	height: 1230px;
 	margin: 0 auto;
 	overflow: hidden;
+	background: #fff;
 }
 #scontent #left-list{
 	width: 212px;
@@ -71,19 +72,3 @@
 	text-indent: 2em;
 
 }
-// #scontent #right-list p{
-// 	font-size: 20px;
-// 	margin-bottom: 16px;
-// 	text-align:center;
-// 	width: 600px;
-// 	
-// 	display: inline;
-// }
-// #scontent #right-list span{
-// 	
-// 	display: inline;
-// 	font-size: 14px;
-// 	text-indent: 2em;
-// 	width: 600px;
-// 	line-height: 28px;
-// }

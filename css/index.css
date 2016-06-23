@@ -358,6 +358,7 @@ ul:after{
 	display:table;
 	margin: 0 auto;
 	overflow: hidden;
+	background: #fff;
 }
 #sub-content #left-list{
 	width: 611px;
